@@ -6,7 +6,7 @@ RUN apk add --no-cache git
 
 # Clone the repository into /app
 RUN git clone --depth=1 --branch=main \
-    https://github.com/HalilCan/headless-chatgpt.git /app
+    https://github.com/awestwell/headless-chatgpt.git /app
 
 # Set /app as the working directory
 WORKDIR /app
