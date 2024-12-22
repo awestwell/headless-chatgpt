@@ -5,8 +5,7 @@ FROM node:18-alpine
 RUN apk add --no-cache git
 
 # Clone the repository into /app
-RUN git clone --depth=1 --branch=main \
-    https://github.com/awestwell/headless-chatgpt.git /app
+RUN git clone --depth=1 https://github.com/awestwell/headless-chatgpt.git /app
 
 # Set /app as the working directory
 WORKDIR /app
